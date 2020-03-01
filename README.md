@@ -10,7 +10,7 @@ The purpose of these sessions is to provide a quick high-level introduction to M
 * **[Session 2](https://github.com/mohmiim/MLIntroduction/tree/master/session-2/README.md "Session 2")**: 
    How to recognize the type of a chart from an image that include the chart. We will cover How to load images and prepare them to be suitable for use in Neural Network training.
    
-* **[Session 3](https://github.com/mohmiim/MLIntroduction/blob/master/session-3/README.md "Session 3")**:
+* **[Session 3](/session-3/README.md "Session 3")**:
    Improve the accuracy of the chart recognizer done in session 2, by using Convolutional Neural Network. We will also show how this reduces the model size dramatically and speeds up training.
    
 * **[Session 4](https://github.com/mohmiim/MLIntroduction/blob/master/session-4 "Session 4")**:
