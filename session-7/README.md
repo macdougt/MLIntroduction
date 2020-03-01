@@ -18,7 +18,7 @@
 
 ## 1. What is GAN
 
-Generative Adversarial Networks are machine learning models able to learn from existing images of a specific domain then generate new images based on the features it learned from the training images. GANs follow a zero-sum game in their training where you have 2 models almost fighting against each other one is the discriminator model which try to learn how to detect the real images from the generated images and a generator model which try to generate images with enough quality to trick the discriminator into thinking they are real.
+Generative Adversarial Networks are machine learning models that learn from existing images of a specific domain then generate new images based on the features learned from the training images. GANs follow a zero-sum game in their training where you have 2 models almost fighting against each other one is the discriminator model which try to learn how to detect the real images from the generated images and a generator model which try to generate images with enough quality to trick the discriminator into thinking they are real.
 
 It is a cop and thief game, where the thief is trying to confuse the cop and the cop is trying to catch the thief. For example imagine a discriminator (cop) model, trained to detect images of money, while a generator (thief) is trying to generate fake money with enough quality to confuse the cop. Any time the discriminator detects the fake images as fake that is an indication for the generator that it needs to do better, and vice versa.
 
@@ -55,7 +55,7 @@ One big difference between, **Conv2DTranspose** and **Conv2D** is the effect of 
 
 As discussed in **[What is GAN](#1-what-is-gan)**, GAN actually consists of 2 models, the discriminator and the generator, and we are trying to train both at the same time and they affect each other, as a result, GAN training is a bit more involved than the training we did in previous sessions.
 
-Let's see what happens during one epoch while training GAN, during one epoch we need to update the weights of both the discriminator model and the generator model.  
+Let's see what happens during one epoch while training GAN, during one epoch we need to update the weights of both the discriminator model and the generator model.Â Â 
 
 **Discriminator update** :
   
@@ -70,7 +70,7 @@ The following figure shows the Discriminator model training process:
 
 **Generator update** :  
  
-The Generator goal is a bit different, it is goal is to generate good enough images that the discriminator thinks they are real. During one epoch we updated the discriminator weights (as per the previous section), then we need to update the generator weights too. the input to the generator is a vector of numbers (the latent space), so it is easy to randomly generate set of those, but we want the generator to generate realistic images that can confuse the discriminator, to do what we create a model where we stack the generator on top of the discriminator, this means that the output of the generator is passed to the discriminator. If we train this model to classify these fake images as real, it means it will update the weights in a way that make the generator generate real images, but there is a caveat here, the update will try to update both the discriminator and generator weights since they are in the same model, and this means we are messing up the training we did in the previous section, we just want to update the generator model weights in this step, this is easily fixable, we can do that by freezing the discriminator weights in this model, this way it will just update the generator weights which is exactly what we want.  
+The Generator goal is a bit different, it is goal is to generate good enough images that the discriminator thinks they are real. During one epoch we updated the discriminator weights (as per the previous section), then we need to update the generator weights too. the input to the generator is a vector of numbers (the latent space), so it is easy to randomly generate set of those, but we want the generator to generate realistic images that can confuse the discriminator, to do what we create a model where we stack the generator on top of the discriminator, this means that the output of the generator is passed to the discriminator. If we train this model to classify these fake images as real, it means it will update the weights in a way that make the generator generate real images, but there is a caveat here, the update will try to update both the discriminator and generator weights since they are in the same model, and this means we are messing up the training we did in the previous section, we just want to update the generator model weights in this step, this is easily fixable, we can do that by freezing the discriminator weights in this model, this way it will just update the generator weights which is exactly what we want. Â 
 
 The following figure shows the GAN model used to train the generator:
 
@@ -81,7 +81,7 @@ The following figure shows the GAN model used to train the generator:
 ## 4. GAN Tips and Tricks
 
 GAN training as seen in **[How to train GAN](#3-how-to-train-gan)**, is quite involved. And a lot of the training process and parameter adjustment is a trial and error kind of approach. This being said, there are many successfully trained GAN models out there, and people shared their tips and tricks on how to train a GAN
-Here are few:  
+Here are few: Â 
 
 * Use LeakyReLU instead or Relu for the activation of hidden layers with a slope of 0.2
 * Use gaussian weight initialization for the weights, using RandomNormal from Keras
@@ -93,7 +93,7 @@ Here are few:  
 * Instead of using pooling layer in the discriminator, use stride of (2,2)
 * Consider using BatchNormilization layer before the activation (i got a mixed result for this one)
 
-These are just a few tips and tricks, your results might be different and you should feel comfortable mixing and matching and changing the hyperparameters  
+These are just a few tips and tricks, your results might be different and you should feel comfortable mixing and matching and changing the hyperparametersÂ  
  
 For full list [check out this NIPS 2016 session](https://github.com/mohmiim/ganhacks)   
 
@@ -105,7 +105,7 @@ Time to have some fun :), let's try to create a GAN capable of generating images
 
 we will use the [mnist](http://yann.lecun.com/exdb/mnist/) data set to train our model, keras already have a function to load this data set for you 
 
-Let's define a function that will load the data, and scale it to [-1,1]  
+Let's define a function that will load the data, and scale it to [-1,1]Â Â 
 
 ~~~~{.python}
 from numpy import expand_dims
@@ -145,7 +145,7 @@ def generate_latent_input(latentDim, count):
   return X
 ~~~~
 
-We have a function that loads the real samples, and we have a function that generates random input latent space, but we need a function to generate fake samples, let's create it 
+We have a function that loads the real samples, and we have a function that generates random input latent space, but we need a function to generate fake samples, let's create itÂ 
 
 ~~~~{.python}
 def create_generated_samples(generator, latentDim, count):
@@ -492,7 +492,7 @@ def createDiscConvLayer(model):
     model.add(LeakyReLU(alpha=DISC_LEAKY_ALPHA))
 ~~~~
 
-Time to update our discriminator model by increasing the convolution block to deal with the bigger input image and update the input to reflect the correct image input 
+Time to update our discriminator model by increasing the convolution block to deal with the bigger input image and update the input to reflect the correct image inputÂ 
 
 ~~~~{.python}
 from tensorflow.keras.models import Sequential
