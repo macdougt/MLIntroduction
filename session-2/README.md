@@ -122,7 +122,7 @@ model.fit_generator(generator=train_generator,epochs=500)
    
 ## 4. Testing model performance
 
-   We loaded our data, designed our model and trained it. Now we want to see how does it perform.
+   We loaded our data, designed our model and trained it. Now we want to see how it performs.
 
 To do this, we need to understand a few new terms
 
@@ -142,16 +142,22 @@ To do this, we need to understand a few new terms
    
    When the actual class is yes but predicted class in no. E.g. if the actual class is a Bar chart but the predicted class is Pie.
 
+**Accuracy:**
+
+   Accuracy is the ratio of correct predictions to the total number of predictions
+   
+   Accuracy = (TP + TN)/(TP + TN + FP + FN)
+
 **Precision:** 
  
    Precision is the ratio of correctly predicted instances of a class to the total predicted instances of this class. In other words, out of all predicted bar charts how many were really bar charts. High precision indicates a low false positive rate.
-   Precision = TP/TP+FP
+   Precision = TP/(TP + FP)
 
 **Recall:** 
 
    Recall is the ratio of correctly predicted instances of a class to the all instances of the actual class. In other words out of all bar charts how many were correctly identified. 
    
-   Recall = TP/TP+FN
+   Recall = TP/(TP + FN)
 
 
 **F1 Score:**  
