@@ -18,10 +18,10 @@ _Just keep this statement in mind, it will make sense as we continue._
 
 ## 1. Introduction to Machine Learning
 
-Machine Learning, Artificial Intelligence, and Augmented Intelligence are words we hear today everywhere. We each perceive them differently: they scare some and excite others. But what are they really? Should we be scared or excited? What can it do for you, your company, and your community?
+Machine Learning, Artificial Intelligence, and Augmented Intelligence are terms that we often hear today. We each perceive them differently: they scare some and excite others. But what are they really? Should we be scared or excited? What can it do for you, your company, and your community?
 
 As a software developer, not a data scientist or a researcher, should you care?
-The answer is, you definitely should care. The transformation is happening as you read this. Examples of this transformation are all around us. Luckily, it's not too late to get your feet wet and apply it. The topic's not as scary as it might sound! You don't need a Ph.D. or an advanced degree in statistics (though it does not hurt to have one of them or both :) ).
+The answer is, you definitely should care. The transformation is happening as you read this. Examples of this transformation are all around us. Luckily, it's not too late to get your feet wet and apply it. The topic is not as scary as it might sound! You don't need a Ph.D. or an advanced degree in statistics (though it does not hurt to have one of them or both :) ).
 
 Let’s start simple. What is the difference between machine learning and our typical day to day software development (I might even say compared to classic development)? In typical programming we receive an input, and we write code that represents all the rules for producing the correct output.
 
@@ -40,7 +40,7 @@ Try to think of the rules we need to perform this task. Coding the rules aside, 
 On the other hand, in a machine learning paradigm you begin with some input data and the correct output data, and the machine learning algorithm comes up with the rules for you.
 
 
-If you think about it, it is much easier this way (given you have enough data to cover the whole problem space), as the system is coming up with all the rules for you. Furthermore, it's possible that the algorithm will come up with rules you didn't know existed. These rules are captured in what we call the machine learning model.
+If you think about it, it is much easier this way (given you have enough data to cover the whole problem space), as the system is coming up with all the rules for you. Furthermore, it's possible that the algorithm will come up with rules you didn't know existed. These rules are captured in what we call the machine learning model. #Tom This does hide the "how" which makes explanability a difficult problem.
 
 ## 2. Single-Neuron Neural Network
 
