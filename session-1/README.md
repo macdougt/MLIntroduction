@@ -128,7 +128,7 @@ Optimization functions are used to minimize the loss of the Neural Network; ther
 
    In the next sections/sessions we will be building our own models using TensorFlow in Python, so it is a good idea to consider what will you use as an IDE. There are many options, but it really comes down to personal preference. I will share mine: 
 
-- Juptyer notebooks: (obvious choice), you can install the server on your machine and start using it (i do not do that), or you can use any of the freely hosted ones. 
+- Jupyter notebooks: (obvious choice), you can install the server on your machine and start using it (i do not do that), or you can use any of the freely hosted ones. 
 - [google colaboratory](https://colab.research.google.com "google colaboratory"): (my favourite) I like it because it is quite accessible and make it very easy to hit the ground running. Also, it gives you access to a free GPU, which will become very important when we start building more complicated models that take time to train (with the GPU, the training process will be much faster). 
  
 The only thing I do not like much about notebooks is the debugging experience, that is why I usually set up a local IDE as well to make it easier for me to debug my code. There are many options, for example Visual Studio Code but I prefer to use Eclipse with PyDev plugin installed to enable Python development. I will do my best to make sure the sample code in the tutorial can be just copied and pasted in google colaboratory.
