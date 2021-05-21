@@ -144,27 +144,28 @@ To do this, we need to understand a few new terms
 
 **Accuracy:**
 
-   Accuracy is the ratio of correct predictions to the total number of predictions
+Accuracy is the ratio of correct predictions to the total number of predictions
    
-   Accuracy = (TP + TN)/(TP + TN + FP + FN)
+Accuracy = (TP + TN)/(TP + TN + FP + FN)
 
 **Precision:** 
  
-   Precision is the ratio of correctly predicted instances of a class to the total predicted instances of this class. In other words, out of all predicted bar charts how many were really bar charts. High precision indicates a low false positive rate.
-   Precision = TP/(TP + FP)
+Precision is the ratio of correctly predicted instances of a class to the total predicted instances of this class. In other words, out of all predicted bar charts how many were really bar charts. High precision indicates a low false positive rate.
+
+Precision = TP/(TP + FP)
 
 **Recall:** 
 
-   Recall is the ratio of correctly predicted instances of a class to the all instances of the actual class. In other words out of all bar charts how many were correctly identified. 
+Recall is the ratio of correctly predicted instances of a class to the all instances of the actual class. In other words out of all bar charts how many were correctly identified. 
    
-   Recall = TP/(TP + FN)
+Recall = TP/(TP + FN)
 
 
 **F1 Score:**  
    
-   F1 Score is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account. Intuitively it is not as easy to understand as accuracy, but F1 is usually more useful than accuracy, especially if you have an uneven class distribution. Accuracy works best if false positives and false negatives have similar cost. If the cost of false positives and false negatives are very different, it's better to look at both Precision and Recall.
+F1 Score is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account. Intuitively it is not as easy to understand as accuracy, but F1 is usually more useful than accuracy, especially if you have an uneven class distribution. Accuracy works best if false positives and false negatives have similar cost. If the cost of false positives and false negatives are very different, it's better to look at both Precision and Recall.
    
-   F1 Score = 2*(Recall * Precision) / (Recall + Precision)
+F1 Score = 2*(Recall * Precision) / (Recall + Precision)
    
 This might sound a bit much, but the more you use these the more it will be clear to you, for now lets just focus on the precision
 
@@ -179,7 +180,7 @@ Calculating these numbers, is a task that we  will do many times to verify our m
         target_names = generator.class_indices.keys()
         print(classification_report(generator.classes, row_index, target_names=target_names))
 ```
-   In the previous code we create a method that receive a data generator (like the one we created before) and a model then it display the numbers we discussed for each class in the model. 
+   In the previous code, we create a method that receives a data generator (like the one we created before) and a model then it display the numbers we discussed for each class in the model. 
 
 The First line is just using the model to predict all the values for our testing data by calling ``predict_generator`` on our model and passing it the generator.
 
