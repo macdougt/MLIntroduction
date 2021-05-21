@@ -44,9 +44,9 @@ If you think about it, it is much easier this way (given you have enough data to
 
 ## 2. Single-Neuron Neural Network
 
-Usually the first concept that comes to mind when someone mentions Machine Learning or Deep Learning is Neural Network. It had been there for a very long time, it had good days and bad days :) , but regardless, understanding it will allow us to understand the more sophisticated topics we will handle in later sessions.
+Usually the first concept that comes to mind when someone mentions Machine Learning or Deep Learning is Neural Network. It had been around for a very long time, it had good days and bad days :) #Tom AI winters and summers, but regardless, understanding it will allow us to understand the more sophisticated topics we will handle in later sessions.
 
-This figure shows the simplest Neural Network we can create. It has only one node (neuron), accepts 2 inputs and has one output:
+This figure below shows the simplest Neural Network we can create. It has only one node (neuron), accepts 2 inputs and has one output:
 
 <p align="center"> 
 <img src="images/SingleNeuron.png">
@@ -126,7 +126,10 @@ Optimization functions are used to minimize the loss of the Neural Network; ther
 
 ### Running Python code
 
-   In the next sections/sessions we will be building our own models using TensorFlow in Python, so it is a good idea to consider what will you use as an IDE. There are many options, but it really comes down to personal preference. I will share mine, first obvious one is Juptyer notebooks, you can install the server on your machine and start using it (i do not do that), or you can use any of the freely hosted ones. My favorite is [google colaboratory](https://colab.research.google.com "google colaboratory"); I like it because it is quite accessible and make it very easy to hit the ground running. Also, it gives you access to a free GPU, which will become very important when we start building more complicated models that take time to train (with the GPU, the training process will be much faster). The only thing I do not like much about notebooks is the debugging experience, that is why I usually set up a local IDE as well to make it easier for me to debug my code. There are many options, for example Visual Studio Code but I prefer to use Eclipse with PyDev plugin installed to enable Python development. I will do my best to make sure the sample code in the tutorial can be just copied and pasted in google colaboratory.
+   In the next sections/sessions we will be building our own models using TensorFlow in Python, so it is a good idea to consider what will you use as an IDE. There are many options, but it really comes down to personal preference. I will share mine: 
+
+- Juptyer notebooks: (obvious choice), you can install the server on your machine and start using it (i do not do that), or you can use any of the freely hosted ones. 
+- [google colaboratory](https://colab.research.google.com "google colaboratory"): (my favourite) I like it because it is quite accessible and make it very easy to hit the ground running. Also, it gives you access to a free GPU, which will become very important when we start building more complicated models that take time to train (with the GPU, the training process will be much faster). The only thing I do not like much about notebooks is the debugging experience, that is why I usually set up a local IDE as well to make it easier for me to debug my code. There are many options, for example Visual Studio Code but I prefer to use Eclipse with PyDev plugin installed to enable Python development. I will do my best to make sure the sample code in the tutorial can be just copied and pasted in google colaboratory.
 
 ## 3. Approximating a linear function with Single-Neuron Neural Network
 
