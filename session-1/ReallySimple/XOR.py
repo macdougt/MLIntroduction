@@ -17,7 +17,10 @@ yv = ys
 model = Sequential();
 model.add(Dense(units=32,input_dim=2, activation='relu'))
 model.add(Dense(units=16, activation='relu'))
-model.add(Dense(units=1, activation='sigmoid'))
+model.add(Dense(units=1, activation='sigmoid')) # <-- This line is the key, linear approximations
+                                                # are not sufficient and in general when approximating,
+                                                # consider what type of function will help map my input
+                                                # to my output
 
 
 
