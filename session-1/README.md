@@ -355,4 +355,5 @@ the expected output should be
 
 or You can use [this Notebook](https://github.com/mohmiim/MLIntroduction/blob/master/session-1/Session_1_XOR.ipynb) to see the note book, then click on the Open in Colab button to run it and change the code as you like 
    
+[Next lesson](/session-2)
    
