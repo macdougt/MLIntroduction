@@ -221,9 +221,9 @@ you will get something similar to this output:
 
 <img src="images/test.png" height="150" width="350">
 
-You will notice that precision now is 78% instead of 100%, but this is a lot more real measure of our model performance since we are running it on data the model did not see before.
+You will notice that precision now is 78% instead of 100%, but this is a truer measure of our model performance since we are running it on data the model has not see before.
 
-An interesting observation here is our training precision is 100%, while our testing precision is 78%. Although 78% is good, when you see a big difference between model training performance and testing performance this is an indication of a problem called Overfitting.
+An interesting observation here is our training precision is 100%, while our testing precision is 78%. Although 78% is good, when you see a big difference between model training performance and testing performance this is an indication of a problem called *overfitting*.
 
 **Overfitting:**
 If our model does much better on the training set than on the test set, then we’re likely overfitting. There are few actions you can take to deal with overfitting:
