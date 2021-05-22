@@ -209,15 +209,15 @@ test_generator = test_data_generator.flow_from_directory("../smallData/test",
                                                          target_size=(100,100),
                                                          shuffle=False)
 ```
-It is similar code to what we did with the training set, but we pass it the folder for the testing set instead of the training folder, and we set shuffle to False since we do not want to shuffle or testing set.
+The code for test data set is similar to that of the training set, but we pass the folder for the testing set instead of the training folder, and we set shuffle to `False` since we do not want to shuffle our testing set.
 
-now we can call our test function agian but this time with the testing data set and see what do we get
+We can now call our test function with the testing data set and see what we get,
 
 ```python
    test(generator=test_generator, model=model)
 ```
 
-you will get something similar to this output
+you will get something similar to this output:
 
 <img src="images/test.png" height="150" width="350">
 
