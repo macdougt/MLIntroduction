@@ -118,7 +118,7 @@ As you can see this model has 31M parameters to train. To train the model use th
 ```python
 model.fit_generator(generator=train_generator,epochs=500)
 ```
-   Since we are using ImageDataGenerator to load our data, we use the fit_generator method instead of the fit method, which is the same as the fit method we saw before but it receives a generator as the input instead of the typical array of input and output.
+   Since we are using ImageDataGenerator to load our data, we use the [fit_generator](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit_generator) method instead of the fit method, which is the same as the fit method we saw before but it receives a generator as the input instead of the typical array of input and output.
    
 ## 4. Testing model performance
 
