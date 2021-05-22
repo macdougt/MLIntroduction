@@ -103,7 +103,7 @@ model.compile(optimizer=SGD(),
    
    You will notice that I am using more nodes in each layer than before, and I set my input to be an array of (100,100,3) as we explained before, but neural net Dense layer expects a vector, that is why we use the layer type Flatten to convert our input to a vector.
 	You will also notice that my output layer has 2 nodes since i have 2 classes of output to identify, Bar chart and Pie chart, and the loss function I am using here is the categorical crossentropy since my output is more than one class.
-	To get an idea of how big is this model, use the summary function to display it, like this:
+	To get an idea of how big is this model, use the [summary](https://www.tensorflow.org/api_docs/python/tf/keras/Model#summary) function to display it, like this:
    
    ```python      
  model.summary()
