@@ -19,7 +19,7 @@
 
 ## 1. What is a Dense Layer
 
-We went through how single neuron and multi-neuron (multilayers as well) neural networks work, ypu may have observed that the layers in our neural networks are fully connected. Meaning that every node in one layer is connected to all nodes in the layers before and after it and this is called *dense*. 
+We went through how single neuron and multi-neuron (multilayers as well) neural networks work, you may have observed that the layers in our neural networks are fully connected. Meaning that every node in one layer is connected to all nodes in the layers before and after it and this is called *dense*. 
 
 <p align="center"> 
 <img src="images/dense.png" >
