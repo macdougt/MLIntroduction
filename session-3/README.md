@@ -3,7 +3,7 @@
 
 ## What will we cover
 
-[1. What is Dense Layer](#1-what-is-dense-layer)
+[1. What is a Dense Layer](#1-what-is-a-dense-layer)
 
 [2. What is Convolutional Neural Network](#2-what-is-convolutional-neural-network)
 
@@ -17,7 +17,7 @@
 
 [7. Assignment](#7-assignment)
 
-## 1. What is Dense Layer
+## 1. What is a Dense Layer
 
 We went through how single neuron and multi neuron (multilayers as well) neural networks work, one observation you would have  seen is that layers in neural networks are fully connected. Meaning that every node in one layer is connected to all nodes in the layers before and after it  (Hence the layer type we used in tensorflow is called Dense). 
 
