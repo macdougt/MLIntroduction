@@ -5,9 +5,9 @@
 
 [1. What is a Dense Layer](#1-what-is-a-dense-layer)
 
-[2. What is Convolutional Neural Network](#2-what-is-convolutional-neural-network)
+[2. What is Convolutional Neural Network](#2-what-is-a-convolutional-neural-network)
 
-[3. What is Pooling Layer](#3-what-is-pooling-layer)
+[3. What is Pooling Layer](#3-what-is-a-pooling-layer)
 
 [4. Why Convolutional Neural Network](#4-why-convolutional-neural-network)
 
@@ -19,17 +19,19 @@
 
 ## 1. What is a Dense Layer
 
-We went through how single neuron and multi neuron (multilayers as well) neural networks work, one observation you would have  seen is that layers in neural networks are fully connected. Meaning that every node in one layer is connected to all nodes in the layers before and after it  (Hence the layer type we used in tensorflow is called Dense). 
+We went through how single neuron and multi-neuron (multilayers as well) neural networks work, ypu may have observed that the layers in our neural networks are fully connected. Meaning that every node in one layer is connected to all nodes in the layers before and after it and this is called *dense*. 
 
 <p align="center"> 
 <img src="images/dense.png" >
 </p>
 
-But Why is that important to understand, The fully connected nature of the Dense layer impacts how many parameters we need to train during the training phase, and it impacts how long training will take and how big it the model? For example, if we have a neural network that accepts 5 inputs and has 3 hidden layers 10 nodes each and one output layer of 2 nodes. The number of parameters in this networks will be N = 5 \* 10 + 10 \* 10 + 10 \* 10 + 10 \* 2 = 270 (this calculation does not consider the extra B node).
+But why is that important to understand?
+
+The fully connected nature of the Dense layer impacts how many parameters we need to train during the training phase, and it impacts how long training will take and how big it the model? For example, if we have a neural network that accepts 5 inputs and has 3 hidden layers 10 nodes each and one output layer of 2 nodes. The number of parameters in this networks will be `N = 5 * 10 + 10 * 10 + 10 * 10 + 10 * 2 = 270` (this calculation does not consider the extra B node).
 
 Can we reduce this, so we can create very complex networks without having 100s of millions of parameters to train ?!! Welcome to convolution neural networks or CNN.
 
-## 2. What is Convolutional Neural Network
+## 2. What is a Convolutional Neural Network
 
 Convolution Neural Network is a special kind of neural network that had been proven to work very well with images. For example recognizing faces, animals, different types of objects and so on.  
 
@@ -66,7 +68,7 @@ model.add(Conv2D(64,(3,3),activation=relu))
 
 The previous code add a convolution layer to your model, that contains 64 filters, where each filter is 3\*3 
 
-## 3. What is Pooling Layer
+## 3. What is a Pooling Layer
 
 We learned in the previous section what is convolution layer, it extracts features from the layer before it. But these features encode the precise position of the feature in the input, this is not ideal since a small shift in the input will result in a different feature set and can lead to the wrong classification. The solution to this is to create a lower resolution version of the extracted features while maintaining the large or important features this is called pooling this will remove the precise details this might be of no value to our recognition task. The pooling layer does not really learn it just applies the pooling operation to the previous layer output, typically in CNN you find each Convolution layer followed by a pooling layer.
 
