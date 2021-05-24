@@ -35,15 +35,15 @@ Can we reduce this, so we can create very complex networks without having 100s o
 
 Convolution Neural Network is a special kind of neural network that had been proven to work very well with images. For example recognizing faces, animals, different types of objects and so on.  
 
-To understand how CNN works we need to first understand what is the Convolution operation. Convolution operation is applying a specific filter to the image to extract specific feature by considering small squares of the input data and maintain their relationship. Let's assume that our image is I and the Filter is K how can we apply the convolution operation  ?
+To understand how CNN works we need to first understand what is the Convolution operation. Convolution operation is applying a specific filter to the image to extract specific feature by considering small squares of the input data and maintain their relationship. Ley us apply the convolution operation on an image `I` with filter `K`:
 
 <p align="center"> 
 <img src="images/conv.png" >
 </p>
 
-In the figure above, convolution is I\*K the filter K is moved across I one step at a time and for each step that part of I is multiplied by K we keep doing that till the filter had been moved over all pixels in I and we get the output image I*K
+In the figure above, the convolution is `I*K` with the filter `K` moving across `I` one step at a time and for each step that part of `I` is multiplied by K we keep doing that till the filter had been moved over all pixels in I and we get the output image `I*K`
 
-You will notice that the output did shrink in width and height, in the example above the input was 7\*7 but the output was 5\*5. There are multiple or parameters that affect the convolution operation, in the previous example we the filter moved one pixel at a time, this is called the stride which you can control to be suitable for your use case. Another factor does you do padding or not, in the example above the output image shrank because we did not do padding so the corner pixels could not be convoluted, while we could have added a rectangle of 0's around the image this would have increased the input size to 9\*9 so the output would have been 7\*7
+You will notice above that the output shrank both in width and height. The input was `7*7` but the output was `5*5`. There are multiple or parameters that affect the convolution operation, in the previous example we the filter moved one pixel at a time, this is called the *stride* which you can control to be suitable for your use case. Another factor whether you wish to use padding (adding columns and rows around the original grid). The corner pixels could not be convoluted because we did not pad. While we could have added a rectangle of 0's around the image this would have increased the input size to `9*9` so the output would have been `7*7`
 
 <p align="center"> 
 <img src="images/padding.png" height="350" width="370" >
