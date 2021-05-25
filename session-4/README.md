@@ -52,7 +52,7 @@ That is cool, but can we do better?
 
 So far, we improved our accuracy by using CNN instead of NN, and by augmenting our training set with manufactured examples, this allowed us to improve our accuracy to around 80% instead of 68%. but we can do more. Our challenge is the fact that we have a small number of training samples which limit our model abilities to extract good features to predict the correct class. If we look in tensorflow.keras.applications we will find many pre-built [models](https://www.tensorflow.org/api_docs/python/tf/keras/applications "Applications") targeted for image classification. Let's pick one and take a deeper look, we will look at [xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception)
 
-### Exception model
+### xception model
 
 This model is trained using the [ImageNet](http://www.image-net.org/) dataset which contains 1000 different classes, the training set is roughly 1.2 million images. The Top-1 accuracy of this model on ImageNet is around 79%. 
 
