@@ -50,7 +50,7 @@ That is cool, but can we do better?
 
 ## 3. Transfer learning
 
-So far, we improved our accuracy by using CNN instead of NN, and by augmenting our training set with manufactured examples, this allowed us to improve our accuracy to around 80% instead of 68%. but we can do more. Our challenge is the fact that we have a small number of training samples which limit our model abilities to extract good features to predict the correct class. If we look in tensorflow.keras.applications we will find many pre-built [models](https://www.tensorflow.org/api_docs/python/tf/keras/applications "Applications") targeted for image classification. Let's pick one and take a deeper look, we will look at [xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception)
+So far, we improved our accuracy by using CNN instead of NN, and by augmenting our training set with manufactured examples, this allowed us to improve our accuracy to from around 68% to 80%. But we can do more. Our challenge is the fact that we have a small number of training samples which limit our model's ability to extract good features and predict the correct class. If we look in `tensorflow.keras.applications`, we will find many pre-built [models](https://www.tensorflow.org/api_docs/python/tf/keras/applications "Applications") targeted for image classification. Let's pick one and take a deeper look, we will look at [xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception). No spelling mistake here.
 
 ### xception model
 
@@ -71,11 +71,11 @@ xception.Xception loads our pre-trained model, while the summary method will pri
 
 plot_model function will save an [image](https://github.com/mohmiim/MLIntroduction/tree/master/session-4/images/full.png "full model") of the model architecture
 
-How can this help us? this model had been trained to receive images extract features from these images and classify them to be one of 1000 class, we want to train a model to receive an image, extract features from this image and classify it to one of 5 classes. The 2 problems sound very similar but they have different outputs. We can benefit from the features the xception model extracted, but we can not befit form its output classes, if we find a way to load this pre-trained model, but ditch the output layer then we have a model that can extract the features from an image but not classify it, we can call that our feature extractor then we create a simple NN that receive these features instead of the raw image and train it to do our 5 classes classification. This process is called transfer Learning
+How can this help us? This model had been trained to receive images extract features from these images and classify them to be one of 1000 class, we want to train a model to receive an image, extract features from this image and classify it to one of 5 classes. The 2 problems sound very similar but they have different outputs. We can benefit from the features the xception model extracted, but we cannot benefit from its output classes, if we find a way to load this pre-trained model, but ditch the output layer then we have a model that can extract the features from an image but not classify it, we can call that our feature extractor and create a simple NN that receives these features instead of the raw image and train it to do our 5 class classification. This process is called *transfer learning*.
 
 ## 4. Why transfer learning
 
-Transfer learning enables us to benefit from pre-trained models, that had been trained on large data sets and apply their feature extraction abilities to our domain. This helps a lot in cases where we have a small training set
+Transfer learning enables us to benefit from pre-trained models, that had been trained on large data sets and apply their feature extraction abilities to our domain. This helps a lot in cases where we have a small training set.
 
 The following diagram shows the flow of the transfer learning process
 
