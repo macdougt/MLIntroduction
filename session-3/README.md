@@ -133,5 +133,7 @@ The model size is a big difference, the CNN model size will be around 7MB while 
 
 Can you modify the model to improve the accuracy, give it a try by copying the provided [notebook](https://github.com/mohmiim/MLIntroduction/blob/master/session-3/Session_3_first.ipynb "full example") and modifying it. Good luck
 
-Do you wish to keep going? [Next session: Transfer Learning](/session-4)
+Do you wish to keep going? 
+
+[Next session: Transfer Learning](/session-4)
 
