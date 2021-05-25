@@ -89,7 +89,7 @@ model.add(MaxPool2D((2,2)))
 
 ## 4. Why Convolutional Neural Network
 
-One of the main benefits of CNN is the reduction in the numbers of parameters compared to the corresponding Dense Layers. This allows us to create much more complex networks and still be able to train them in a reasonable amount of time and using reasonable hardware. For example, consider a use case where our input is an RGB image of 100 pixels by 100 pixels, this means our input size is `3*100*100 = 30000`. Let's see how many parameters would we have if we create a Dense layer of `1000` nodes vs Conv layer of `64` filters each filter `3*3`.
+One of the main benefits of CNN is the reduction in the numbers of parameters compared to the corresponding Dense Layers. This allows us to create much more complex networks and still be able to train them in a reasonable amount of time and using reasonable hardware. For example, consider a use case where our input is an RGB image of `100`pixels by `100` pixels, this means our input size is `3*100*100 = 30000`. Let's see how many parameters would we have if we create a Dense layer of `1000` nodes vs Conv layer of `64` filters each filter `3*3`.
 Dense : `30000*1000 = 30000000` parameters
 Conv : `64*3*3*3 = 1728` parameters. 
 
