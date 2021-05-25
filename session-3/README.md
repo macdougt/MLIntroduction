@@ -70,9 +70,9 @@ The previous code add a convolution layer to your model, that contains 64 filter
 
 ## 3. What is a Pooling Layer
 
-We learned in the previous section what is convolution layer, it extracts features from the layer before it. But these features encode the precise position of the feature in the input, this is not ideal since a small shift in the input will result in a different feature set and can lead to the wrong classification. The solution to this is to create a lower resolution version of the extracted features while maintaining the large or important features this is called pooling this will remove the precise details this might be of no value to our recognition task. The pooling layer does not really learn it just applies the pooling operation to the previous layer output, typically in CNN you find each Convolution layer followed by a pooling layer.
+In the previous section we learned about convolution layers, extracting features from the layer before it. But these features encode the precise position of the feature in the input, this is not ideal since a small shift in the input will result in a different feature set and can lead to the wrong classification. The solution to this is to create a lower resolution version of the extracted features while maintaining the large or important features this is called pooling this will remove the precise details this might be of no value to our recognition task. The pooling layer does not really learn it just applies the pooling operation to the previous layer output, typically in CNN you find each Convolution layer followed by a pooling layer.
 
-There are different types of pooling, for example, Average pooling which calculate the average value for the pooling area and this became the output, another type is Max pooling which output the largest value in the pooling area.
+There are different types of pooling, for example, *average pooling* which calculates the average value for the pooling area and uses the average as output, similarly *max pooling* uses the maximum.
 
 Example of max pooling
 
