@@ -83,6 +83,8 @@ The following diagram shows the flow of the transfer learning process
 <img src="images/transferLearning.png" height="450" >
 </p>
 
+Humans benefit from transfer learning all the time, consider how much a golfer will already knows when first swinging a baseball bat. The two skills, swinging a golf club and swinging a baseball bat share a lot in common but are not identical. Next consider how these skills transfer to learning cricket.
+
 ## 5. Apply transfer learning to our use-case
 
 The first few steps for loading our data will stay the same as we did in the previous notebook (make sure you have the data augmentation parameters  passed to ImageDataGenerator ) 
