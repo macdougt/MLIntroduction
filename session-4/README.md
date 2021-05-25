@@ -20,7 +20,7 @@
 
 So far we managed to get accuracy in the range of 70% (+/- 3), which is OK but not great. It is a good time to reflect and ask why that is and why we do not have better accuracy?  It is *all* about data, our training sample is too small compared to the problem we are trying to tackle. Oh, OK then let's use more samples, this is easier said than done, deep learning has a hunger for data and getting clean labeled samples is both money and time consuming.
 
-What if there is a way to automatically manufacture samples? Yes, there is, in session 2 we used the method [ImageDataGenerator](https://github.com/mohmiim/MLIntroduction/tree/master/session-2#2-loading-images-training-set-using-tensorflow "Image data Generator") to load our training samples, but this method can do more, it can do Data augmentation based on the parameters we use.
+What if there is a way to automatically manufacture samples? Well there is, in [session 2](/session-2), we used the method [ImageDataGenerator](https://github.com/mohmiim/MLIntroduction/tree/master/session-2#2-loading-images-training-set-using-tensorflow "Image data Generator") to load our training samples, but this method can do more, it can perform *data augmentation* based on the parameters we use.
 
 ImageDataGenerator support different types of data augmentation options:
  - width_shift_range and height_shift_range shifts image along width or height.
@@ -52,7 +52,7 @@ That is cool, but can we do better?
 
 So far, we improved our accuracy by using CNN instead of NN, and by augmenting our training set with manufactured examples, this allowed us to improve our accuracy to around 80% instead of 68%. but we can do more. Our challenge is the fact that we have a small number of training samples which limit our model abilities to extract good features to predict the correct class. If we look in tensorflow.keras.applications we will find many pre-built [models](https://www.tensorflow.org/api_docs/python/tf/keras/applications "Applications") targeted for image classification. Let's pick one and take a deeper look, we will look at [xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception)
 
-###xception model
+### Exception model
 
 This model is trained using the [ImageNet](http://www.image-net.org/) dataset which contains 1000 different classes, the training set is roughly 1.2 million images. The Top-1 accuracy of this model on ImageNet is around 79%. 
 
