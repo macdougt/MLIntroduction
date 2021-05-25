@@ -18,7 +18,7 @@
 
 ## 1. Accuracy so far and how to improve it
 
-So far we managed to get accuracy in the range of 70% (+/- 3), which is OK but not great. It is a good time to think why is that why we do not have better accuracy?  It is All about data, our training sample is too small compared to the problem we are trying to tackle. Oh, OK then let's have more samples, this is easier said than done, deep learning has a hunger to data and getting clean labeled samples is time and money consuming task.
+So far we managed to get accuracy in the range of 70% (+/- 3), which is OK but not great. It is a good time to reflect and ask why that is and why we do not have better accuracy?  It is *all* about data, our training sample is too small compared to the problem we are trying to tackle. Oh, OK then let's use more samples, this is easier said than done, deep learning has a hunger for data and getting clean labeled samples is both money and time consuming.
 
 What if there is a way to automatically manufacture samples? Yes, there is, in session 2 we used the method [ImageDataGenerator](https://github.com/mohmiim/MLIntroduction/tree/master/session-2#2-loading-images-training-set-using-tensorflow "Image data Generator") to load our training samples, but this method can do more, it can do Data augmentation based on the parameters we use.
 
