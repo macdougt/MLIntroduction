@@ -75,7 +75,9 @@ Typical time series will contain all three
 
 ## 4. Sequence Models
 
-Time to start talk Machine Learning, In the previous sessions we did learn many types of Machine learning layers and models, like Neural Networks and Convolution Neural Networks (CNN). Time series will require us to learn a new type or Models which is called sequence models. The name almost till it all, in these models order does matter because the data it is trying to learn are order sensitive. This is important in many applications for example in Natural Language Processing where the order or words affect how we understand the sentence, also in time series analysis without the correct order our analysis will be invalid.
+Time to start talking about Machine Learning:
+
+In the previous sessions, we used types of Machine Learning layers and models, like Neural Networks and Convolution Neural Networks (CNN). Time series will require us to learn a new type or Models which is called sequence models. The name almost till it all, in these models order does matter because the data it is trying to learn are order sensitive. This is important in many applications for example in Natural Language Processing where the order or words affect how we understand the sentence, also in time series analysis without the correct order our analysis will be invalid.
 
 The most basic type of sequence models is Recurrent Neural Networks, where the output of the previous step impact the out of the next step
 
