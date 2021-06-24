@@ -26,7 +26,11 @@
 ## 1. What is Forecasting
 
 Forecasting is the act of using historical data as an input to learn and make predictions about the direction of future trends. 
-Formal definition if Y = {y<sub>1</sub>,y<sub>2</sub>, .... y<sub>n</sub>}then forecasting is finding the values of y<sub>n+h</sub> where h is the horizon of the forecast.
+Formal definition if:
+
+Y = {y<sub>1</sub>,y<sub>2</sub>, .... y<sub>n</sub>}
+
+then forecasting is finding the values of y<sub>n+h</sub> where h is the horizon of the forecast.
 
 It is important to keep in mind what type of forecasting you are attempting:
 
