@@ -5,7 +5,7 @@
 
 [1. What is Forecasting](#1-what-is-forecasting)
 
-[2. The Goal of the session](#2-the-goal-of-the-session)
+[2. The Goal of this session](#2-the-goal-of-this-session)
 
 [3. Time series attributes](#3-time-series-attributes)
 
@@ -34,9 +34,9 @@ then forecasting is finding the values of y<sub>n+h</sub> where h is the horizon
 
 It is important to keep in mind what type of forecasting you are attempting:
 
-**Univariate time Series:** where only one variable is changing over time, for example, if we have a sensor recording temperature over time   
+ - **Univariate time Series:** where only one variable is changing over time, for example, if we have a sensor recording temperature over time   
 
-**Multivariate time series:** more than one variable is changing over time, for example, accelerometer where X, Y, and Z are recorded over time 
+ - **Multivariate time series:** more than one variable is changing over time, for example, accelerometer where X, Y, and Z are recorded over time 
 
 ## 2. The Goal of this session
 
@@ -91,7 +91,7 @@ The next diagram shows how the output of the previous step is fed into the next 
 <img src="images/RNN.png" height="300">
 </p>
 
-This is the base idea of sequence models, but we will not really use RNNs because there are cases where RNN will suffer. These cases are the ones where the output depends on context very early in the sequence. RNN can be adjusted to handle cases like these but there is another type of network that can handle these cases much easier this type is Long Short Term Memory in short LSTM
+This is the base idea of sequence models, but we will not really use RNNs because there are cases where RNN will suffer. These cases are the ones where the output depends on context very early in the sequence. RNN can be adjusted to handle cases like these but there is another type of network that can handle these cases much easier this type is Long Short Term Memory (LSTM).
 
 **LSTM:**
 
