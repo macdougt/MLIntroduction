@@ -230,8 +230,9 @@ The output will look like this:
  
 ## 7. Design our Tensorflow model  
 
-So we talked about Sequence models, and how to prepare time series data for model training, it is time to design our model 
-Since it is a time series we know we will need to use a sequence model, so we will go with LSTM, but through running many experiments it was found that having a convolution layer before the LSTM leads to better results so we will do that in our model. But of course, you can try to add and remove layers to see for your self 
+Earlier we described how to prepare time series data for sequence model training, now we we must discuss its design.
+
+Always choose sequence models when dealing with Time Series. We will start with LSTM, but many experiments [ref?] have shown that having a convolution layer before the LSTM leads to better results so we will do that in our model. You can experiment by adding and removing layers to see the effect for yourself.
 
 **Example model:**
 
